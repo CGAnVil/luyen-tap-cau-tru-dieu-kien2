@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="metter" placeholder="nhập độ dài mét">
+<button onclick="convert()">Convert</button>
+
+<script>
+    function convert() {
+        let metter = parseFloat(document.getElementById('metter').value)
+        let feet = metter * 3.2808
+        alert (metter + ' mét tương đương ' + feet + ' feet')
+    }
+</script>
+</body>
+</html>

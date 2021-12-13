@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="sideA" placeholder="Nhập độ dài cạnh vuông thứ nhất">
+<input type="text" id="sideB" placeholder="Nhập độ dài cạnh vuông thứ hai">
+<button onclick="calculate()">Calculate</button>
+
+<script>
+    function calculate(){
+        let sideA = parseFloat(document.getElementById('sideA').value)
+        let sideB = parseFloat(document.getElementById('sideB').value)
+        let area = sideA * sideB / 2
+        alert('Diện tích tam giác có hai cạnh vuông '+ sideA + ' và ' + sideB + ' là ' + area)
+    }
+</script>
+</body>
+</html>

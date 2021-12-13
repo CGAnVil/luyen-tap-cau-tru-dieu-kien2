@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="c" placeholder="Nhập độ C">
+<button onclick="convert()">Convert</button>
+
+<script>
+    function convert() {
+        let c = parseFloat(document.getElementById('c').value)
+        let f = c * 4.5 + 32
+        alert(c + ' độ C tương đương với ' + f + ' độ F')
+    }
+</script>
+</body>
+</html>

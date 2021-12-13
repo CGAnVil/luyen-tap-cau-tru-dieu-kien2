@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a" placeholder="Nhập hạng tử 1">
+<input type="text" id="b" placeholder="Nhập hạng tử 1">
+<button onclick="resolve()">Resolve</button>
+<p id="ptrinh"></p>
+<p id="result"></p>
+
+<script>
+    function resolve(){
+        let a = parseFloat(document.getElementById('a').value)
+        let b = parseFloat(document.getElementById('b').value)
+        document.getElementById('ptrinh').innerHTML = 'Phương trình co dạng ' + a + ' x ' + ' + ' + b + ' =0'
+        let x = -b/a
+        document.getElementById('result').innerHTML = 'Nghiệm của phương trình là ' + x
+    }
+</script>
+</body>
+</html>
